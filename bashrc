@@ -44,7 +44,7 @@ alias tree="eza --tree --color=always --icons=always"
 alias grep='grep --color=auto'
 #PS1='[\u@\h \W]\$ '
 alias reload='source ~/.bashrc'
-alias tree='eza --tree'
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias c='clear'
