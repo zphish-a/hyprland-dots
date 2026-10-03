@@ -1,0 +1,75 @@
+{
+    "bar": {
+        "clock": {
+            "background": false,
+            "showDate": false,
+            "showIcon": true
+        },
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": false,
+                "id": "audio"
+            },
+            {
+                "enabled": false,
+                "id": "microphone"
+            },
+            {
+                "enabled": true,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            }
+        ],
+        "tray": {
+            "background": true
+        },
+        "workspaces": {
+            "maxWindowIcons": 3,
+            "showWindows": false,
+            "shown": 7
+        }
+    },
+"general": {
+    "language": "",
+    "idle": {
+        "timeouts": [
+            {
+                "timeout": 1800,
+                "idleAction": "lock"
+            },
+            {
+                "timeout": 3600,
+                "idleAction": "dpms off",
+                "returnAction": "dpms on"
+            },
+            {
+                "timeout": 7200,
+                "idleAction": ["systemctl", "suspend-then-hibernate"]
+            }
+        ]
+    }
+},
+"nexus": {
+        "networkRescanInterval": 5000
+    },
+    "services": {
+        "audioIncrement": 0.05,
+        "sensorUnits": "Celsius",
+        "weatherUnits": "Celsius"
+    }
+}
